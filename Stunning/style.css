@@ -1,0 +1,195 @@
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+}
+
+nav {
+    background-color: #11118B;
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 60px;
+}
+
+nav .logo {
+    height: 48px;
+    width: 158px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    gap: 46px;
+    list-style: none;
+}
+
+nav ul a {
+    font-size: 23px;
+}
+
+header img {
+    width: 100%;
+}
+
+
+
+main h1, main h2 {
+    color: #11118B;
+    font-weight: bold;
+}
+
+main h1 {
+    font-size: 60px;
+}
+
+main h2 {
+    font-size: 45px;
+}
+
+main p {
+    color: #272727;
+    font-size: 23px;
+}
+
+main .introduction {
+    margin: 0;
+    padding: 50px 60px 54px 60px;
+    
+}
+
+.introduction h1 {
+    margin:0;
+    margin-bottom: 14px;
+
+}
+
+.introduction p {
+    margin: 0;
+    margin-bottom: 26px;
+    padding: 0;
+}
+
+.introduction{
+    margin-top: 26px;
+    text-decoration: none;
+}
+
+button {
+    padding: 16px 24px;
+    background-color: #11118B;
+    color: white;
+    font-size: 23px;
+    border: 0;
+}
+
+main .content {
+    background-color: #EEEEFC;
+    padding: 38px;
+    margin: 0 60px 35px 60px;
+    gap: 14px;
+}
+
+main .content p {
+    margin:0;
+    
+}
+
+main .content h2 {
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+form {
+    padding-left: 60px;
+    width: 482px;
+}
+
+.formulaire h2 {
+    padding-left: 60px;
+    margin: 35px 0 26px 0;
+}
+
+form {
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form .identité {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+}
+
+
+form .message {
+    margin-bottom: 40px;
+}
+
+form .message, form .prenom, form .nom, form .mail {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+form input, form textarea {
+    border: 0;
+    background-color: #F2F4F8;
+    border-bottom: 1px solid #C1C7CD;
+}
+
+form input {
+    padding: 12px 16px;
+}
+
+
+.formulaire {
+    margin-bottom: 289px;
+}
+
+label, #icone
+{
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    nav
+    {
+        height: 60px;
+    }
+ 
+    nav ul
+    {
+        display: none;
+        flex-direction: column;
+        background: #48435C;
+        height: 220px;
+    }
+ 
+    nav ul a {
+        width: 50%;
+    }
+
+    label 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+ 
+    #toggle:checked + .main_pages {
+        display: flex;
+    }
+}
